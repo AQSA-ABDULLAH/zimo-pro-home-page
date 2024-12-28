@@ -1,11 +1,12 @@
 // components/Hero.js
 import React from "react";
 import Header from "../header/Header";
+import Navbar from "../header/Navbar";
 
 export default function Hero() {
   return (
     <div
-      className="relative bg-cover bg-center h-screen"
+      className="relative bg-cover bg-center h-screen text-white"
       style={{ backgroundImage: "url('/assets/Rectangle 168.png')" }}
     >
       {/* Overlay Image */}
@@ -20,6 +21,10 @@ export default function Hero() {
       {/* Header Component */}
       <div className="relative z-10">
         <Header />
+      </div>
+
+      <div className="relative z-10 mt-4">
+        <Navbar />
       </div>
 
       {/* Content Section */}
