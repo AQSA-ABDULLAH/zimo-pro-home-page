@@ -1,29 +1,26 @@
 export default function Footer() {
     return (
-      <footer className="bg-white text-black">
-        <div className="mx-auto px-8 pb-8 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <footer className="bg-white text-black uppercase tracking-wider">
+        <div className="mx-auto px-8 pb-8 flex flex-col gap-22 md:flex-row flex-wrap justify-between">
           {/* Zimopro Section */}
           <div>
-            <h3 className="text-lg font-bold">ZIMOPRO.COM</h3>
-            <ul className="space-y-2">
+            <h3 className="text-[18px] mb-10 font-semibold">ZIMOPRO.COM</h3>
+            <ul className="space-y-5">
               <li>About</li>
               <li>Contact</li>
               <li>Help & FAQ</li>
             </ul>
-            <div className="mt-4">
-              <p className="font-semibold">The luxury network:</p>
-              <div className="mt-2">
-                <img src="/zima-logo.png" alt="Zima Logo" className="h-6 mb-2" />
-                <p className="text-sm">In partnership with:</p>
-                <img src="/civica-ces-logo.png" alt="Civica CES Logo" className="h-6" />
+            
+              <div className=" flex flex-col mt-14 gap-14">
+                <img src="/assets/Group 3331.png" alt="Zima Logo" className="w-44" />
+                <img src="/assets/Group 3075.png" alt="Civica CES Logo" className="w-44" />
               </div>
-            </div>
           </div>
   
           {/* Categories */}
           <div>
-            <h3 className="text-lg font-bold">CATEGORIES</h3>
-            <ul className="space-y-2">
+            <h3 className="text-[18px] mb-10 font-semibold">CATEGORIES</h3>
+            <ul className="space-y-5">
               <li>Real Estate</li>
               <li>Private Islands</li>
               <li>Yachts</li>
@@ -37,8 +34,8 @@ export default function Footer() {
   
           {/* Business / Agents */}
           <div>
-            <h3 className="text-lg font-bold">BUSINESS / AGENTS</h3>
-            <ul className="space-y-2">
+            <h3 className="text-[18px] mb-10 font-semibold">BUSINESS / AGENTS</h3>
+            <ul className="space-y-5">
               <li>List with us</li>
               <li>Partner</li>
               <li>Display Advertising</li>
@@ -48,8 +45,8 @@ export default function Footer() {
   
           {/* Sell Your Home */}
           <div>
-            <h3 className="text-lg font-bold">SELL YOUR HOME</h3>
-            <ul className="space-y-2">
+            <h3 className="text-[18px] mb-10 font-semibold">SELL YOUR HOME</h3>
+            <ul className="space-y-5">
               <li>Find a Zimo Agent</li>
               <li>Gift Card</li>
               <li>Purchase eGift Card</li>
@@ -58,34 +55,29 @@ export default function Footer() {
   
           {/* Supported Charities */}
           <div>
-            <h3 className="text-lg font-bold">SUPPORTED CHARITIES</h3>
-            <div className="space-y-2">
-              <img src="/unicef-logo.png" alt="Unicef" className="h-6" />
-              <img src="/world-vision-logo.png" alt="World Vision" className="h-6" />
-              <img src="/save-children-logo.png" alt="Save the Children" className="h-6" />
-              <img src="/gosh-logo.png" alt="Great Ormond Street Hospital" className="h-6" />
+            <h3 className="text-[18px] mb-8  font-semibold">SUPPORTED CHARITIES</h3>
+            <div className="space-y-8">
+              <img src="/assets/Group 3126.png" alt="Unicef"/>
+              <img src="/assets/Group 3132.png" alt="World Vision"/>
+              <img src="/assets/Group 3133.png" alt="Save the Children"/>
+              <img src="/assets/Group 3137.png" alt="Great Ormond Street Hospital"/>
             </div>
           </div>
         </div>
   
         {/* Footer Bottom */}
-        <div className=" py-4 text-center text-sm text-black">
-          <div>
-            &copy; 2022 Zimo Group. All Rights Reserved.
+        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 px-6 sm:text-center text-[13px] text-black">
+          <div className="flex gap-2">
+            <img src="/assets/Group 2877.png" alt="logo" className="md:h-5" />
+            COPYRIGHT &copy; 2022 Zimo Group. All Rights Reserved.
           </div>
-          <div className="mt-2 space-x-4">
+          <div className="space-x-4" >
             <a href="#">Terms and Conditions</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Cookies</a>
           </div>
-          <div className="mt-4 flex justify-center space-x-4">
-            <a href="#"><i className="fab fa-youtube"></i></a>
-            <a href="#"><i className="fab fa-vimeo"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-facebook"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-pinterest"></i></a>
-            <a href="#"><i className="fab fa-tiktok"></i></a>
+          <div className="w-[16rem]">
+            <img src="/assets/Group 2666.png" />
           </div>
         </div>
       </footer>
