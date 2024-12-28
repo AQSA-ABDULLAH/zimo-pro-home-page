@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 function Navbar() {
   return (
-    <div className='flex justify-between px-8 text-[22px]'>
-        <p>REAL ESTATE</p>
-        <p>PRIVATE ISLANDS</p>
-        <p>YACHTS</p>
-        <p>JETS</p>
-        <p>CARS</p>
-        <p>WATCHES</p>
-        <p>DIAMONDS</p>
-        <p>TRAVEL THE WORLD</p>
+    <div className="flex justify-between items-center text-center px-8 text-white text-[22px] uppercase tracking-wide">
+      <p className="w-[160px]">Real Estate</p>
+      <p className="w-[120px]">Private Islands</p>
+      <p className="w-[120px]">Yachts</p>
+      <p className="w-[120px]">Jets</p>
+      <p className="w-[120px]">Cars</p>
+      <p className="w-[120px]">Watches</p>
+      <p className="w-[120px]">Diamonds</p>
+      <p className="w-[140px]">Travel the World</p>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

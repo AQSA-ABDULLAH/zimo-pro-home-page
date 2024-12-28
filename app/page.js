@@ -1,10 +1,13 @@
 import Hero from "@/components/hero/Hero";
-import Image from "next/image";
+import Main from "@/components/main/Main";
+import NewsletterSection from "@/components/newsletter/NewsLetter";
 
 export default function Home() {
   return (
     <div>
       <Hero />
+      <Main />
+      <NewsletterSection />
     </div>
   );
 }
