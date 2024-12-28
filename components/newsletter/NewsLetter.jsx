@@ -4,7 +4,7 @@ function NewsletterSection() {
   return (
     <div className="flex flex-col justify-between md:flex-row items-start px-8 py-12 mt-10 bg-white">
       {/* Left Section */}
-      <div className="md:w-[48%] xl:w-[39%]">
+      <div className="md:w-[45%] 2xl:w-[40%]">
         <h2 className="text-2xl font-bold mb-4 text-[40px]">Weekly Newsletter</h2>
         <p className="text-gray-700 text-[20px]">
           Receive the beautifully curated selection of the latest listings from
@@ -13,7 +13,7 @@ function NewsletterSection() {
       </div>
 
       {/* Right Section */}
-      <div className="md:w-[36%] xl:w-[30%] mt-6 md:mt-0 flex flex-col items-start">
+      <div className="md:w-[36%] 2xl:w-[30%] mt-6 md:mt-0 flex flex-col items-start">
         <label htmlFor="email" className="text-[20px] font-bold mb-2">
           EMAIL ADDRESS
         </label>
