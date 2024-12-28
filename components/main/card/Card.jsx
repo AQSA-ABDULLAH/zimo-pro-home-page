@@ -33,11 +33,11 @@ const Card = () => {
   };
 
   return (
-    <div className="text-white bg-white w-full max-w-[350px] md:max-w-[450px]">
-      <div className="relative rounded-t-2xl overflow-hidden shadow-lg">
+    <div className="text-white bg-white w-full max-w-[454px]">
+      <div className="relative rounded-2xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
-          className="h-[350px] md:h-[450px] bg-cover bg-center relative"
+          className="h-[380px] 2xl:h-[547px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundColor: "#ccc",
@@ -65,16 +65,16 @@ const Card = () => {
         <Timer />
 
         {/* Share And Like */}
-        <div className="absolute top-24 md:top-28 right-7 flex items-center space-x-4">
+        <div className="absolute top-24 2xl:top-28 right-7 flex items-center space-x-4">
           <img src="/assets/Path 7830.png" alt="share-icon" className="w-5 h-5"/>
           {isLiked ? (
             <IoMdHeart
-              className="cursor-pointer text-red-500 w-5 h-5 md:w-6 md:h-6"
+              className="cursor-pointer text-red-500 w-5 h-5 2xl:w-6 md:h-6"
               onClick={() => setIsLiked(false)} // Toggle to unliked state
             />
           ) : (
             <FaRegHeart
-              className="cursor-pointer text-white w-5 h-5 md:w-6 md:h-6"
+              className="cursor-pointer text-white w-5 h-5 2xl:w-6 md:h-6"
               onClick={() => setIsLiked(true)} // Toggle to liked state
             />
           )}
@@ -85,8 +85,8 @@ const Card = () => {
           <SquareProgressBar percentage={23} />
           <div className="flex flex-col">
             <div className="flex justify-between text-white">
-              <p className="text-[10px] md:text-[14px] tracking-widest">£5,000,000 GBP</p>
-              <img src="/assets/g12.png" alt="logo" className="px-1 w-16 md:w-20" />
+              <p className="text-[10px] 2xl:text-[14px] tracking-widest">£5,000,000 GBP</p>
+              <img src="/assets/g12.png" alt="logo" className="px-1 w-16 2xl:w-20" />
             </div>
 
             {/* Slide Indicators */}
@@ -95,7 +95,7 @@ const Card = () => {
                 <span
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
-                  className={`cursor-pointer mx-1 h-0.5 w-6 md:w-8 ${
+                  className={`cursor-pointer mx-1 h-0.5 w-4 2xl:w-8 ${
                     index === currentImageIndex ? "bg-gold" : "bg-gray-400"
                   }`}
                 ></span>
@@ -106,26 +106,26 @@ const Card = () => {
 
         {/* Address and Details Section */}
         <div className="absolute w-[100%] bottom-2 tracking-wider">
-          <div className="flex justify-between font-lato text-[7px] md:text-[9px] uppercase  px-6">
+          <div className="flex justify-between font-lato text-[6px] 2xl:text-[9px] uppercase  px-6">
             <p>Shelton Street</p>
             <p>Covent Garden</p>
             <p>London</p>
             <p>WC2H</p>
             <p>United Kingdom</p>
           </div>
-          <p className="text-end text-[5px] md:text-[8px] mt-1 px-5 tracking-widest">
+          <p className="text-end text-[5px] 2xl:text-[8px] mt-1 px-5 tracking-widest">
             #ZM7861234567
           </p>
         </div>
       </div>
 
       {/* Buy Entry Section */}
-      <div className="h-[44px] md:h-[54px] bg-black tracking-widest rounded-b-2xl mt-2 font-lato text-[12px] md:text-[16px]">
+      <div className="h-[44px] 2xl:h-[54px] bg-black tracking-widest rounded-2xl mt-2 font-lato text-[12px] 2xl:text-[16px]">
         <div className="flex justify-between pt-4 px-6">
           <p>£25.00 GBP</p>
           <button>BUY ENTRY NOW</button>
         </div>
-        <p className="text-end text-[5px] md:text-[7px] px-5">#ZM7861234567</p>
+        <p className="text-end text-[5px] 2xl:text-[7px] px-5">#ZM7861234567</p>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Card from "./card/Card";
 
 function Main() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       {/* Header Section */}
       <div className="text-center py-10">
         <h1 className="text-2xl font-bold">Featured</h1>
@@ -11,7 +11,7 @@ function Main() {
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto px-4">
         {Array(8)
           .fill(0)
           .map((_, index) => (
