@@ -33,7 +33,7 @@ const Card = () => {
   };
 
   return (
-    <div className="text-white bg-white w-full max-w-[454px]">
+    <div className="text-white bg-white w-full max-w-[454px] 2xl:max-w-[480px] ">
       <div className="relative rounded-xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
@@ -101,7 +101,7 @@ const Card = () => {
         </div>
 
         {/* Address and Details Section */}
-        <div className="absolute w-[100%] bottom-9 tracking-wider">
+        <div className="absolute w-[100%] bottom-9 2xl:bottom-14 tracking-wider">
           <div className="flex justify-between font-lato text-[6px] 2xl:text-[9px] uppercase  px-6">
             <p>Shelton Street</p>
             <p>Covent Garden</p>

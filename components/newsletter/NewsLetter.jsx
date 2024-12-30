@@ -2,7 +2,7 @@ import React from "react";
 
 function NewsletterSection() {
   return (
-    <div className="flex flex-col justify-between md:flex-row items-start px-8 py-12 mt-10 bg-white">
+    <div className="flex flex-col justify-between md:flex-row items-start px-8 2xl:px-20 py-12 mt-10 bg-white">
       {/* Left Section */}
       <div className="md:w-[45%] 2xl:w-[40%]">
         <h2 className="text-2xl font-bold mb-4 text-[40px]">Weekly Newsletter</h2>

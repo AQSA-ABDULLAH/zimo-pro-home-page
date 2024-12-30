@@ -4,7 +4,7 @@ function BottomSection() {
   return (
     <div>
       {/* Content Section */}
-      <div className="absolute bottom-6 px-10 w-full flex items-end justify-between">
+      <div className="absolute bottom-6 px-20 w-full flex items-end justify-between">
         <div className="flex-shrink-0">
           <img src="/assets/g12.png" alt="logo" className="md:max-2xl:h-16" />
         </div>

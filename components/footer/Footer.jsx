@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-      <footer className="bg-white text-black uppercase tracking-wider">
-        <div className="mx-auto px-8 pb-8 flex flex-col gap-22 md:flex-row flex-wrap justify-between">
+      <footer className="bg-white text-black uppercase  px-8 2xl:px-20 tracking-wider">
+        <div className="mx-auto pb-8 flex flex-col gap-22 md:flex-row flex-wrap justify-between">
           {/* Zimopro Section */}
           <div>
             <h3 className="text-[18px] mb-10 font-semibold">ZIMOPRO.COM</h3>
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
   
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 px-6 sm:text-center text-[13px] text-black">
+        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 sm:text-center text-[13px] text-black">
           <div className="flex gap-2">
             <img src="/assets/Group 2877.png" alt="logo" className="md:h-5" />
             COPYRIGHT &copy; 2022 Zimo Group. All Rights Reserved.

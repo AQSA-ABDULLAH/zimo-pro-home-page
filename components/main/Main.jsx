@@ -47,61 +47,58 @@ function Main() {
   };
 
   return (
-    <div className="flex justify-center ml-16">
-      <div className="w-full max-w-[1800px]">
-        {/* Header Section */}
-        <div className="flex justify-between items-center py-10 px-8 mr-20">
-          <h1 className="text-2xl uppercase">Featured</h1>
-          <p className="uppercase text-[30px]">View All Homes</p>
-          <div className="flex gap-3">
-            {/* Custom Arrows */}
-            <img
-              src="/assets/Group 3100.png"
-              alt="Previous"
-              className="cursor-pointer"
-              onClick={handlePrev} // Trigger previous slide
-            />
-            <img
-              src="/assets/Group 3094.png"
-              alt="Next"
-              className="cursor-pointer"
-              onClick={handleNext} // Trigger next slide
-            />
-          </div>
+    <div>
+      {/* Header Section */}
+      <div className="flex justify-between items-center py-10 2xl:px-20">
+        <h1 className="text-2xl uppercase">Featured</h1>
+        <p className="uppercase text-[30px]">View All Homes</p>
+        <div className="flex gap-3">
+          {/* Custom Arrows */}
+          <img
+            src="/assets/Group 3100.png"
+            alt="Previous"
+            className="cursor-pointer"
+            onClick={handlePrev} // Trigger previous slide
+          />
+          <img
+            src="/assets/Group 3094.png"
+            alt="Next"
+            className="cursor-pointer"
+            onClick={handleNext} // Trigger next slide
+          />
         </div>
+      </div>
 
-        {/* First Slider Section */}
-        <div className="mx-auto">
-          <Slider ref={sliderRef1} {...settings}>
-            {Array(8)
-              .fill(0)
-              .map((_, index) => (
-                <div className="px-8" key={index}>
-                  <Card />
-                </div>
-              ))}
-          </Slider>
-        </div>
+      {/* First Slider Section */}
+      <div className="mx-auto">
+        <Slider ref={sliderRef1} {...settings}>
+          {Array(8)
+            .fill(0)
+            .map((_, index) => (
+              <div className="px-8 2xl:px-20" key={index}>
+                <Card />
+              </div>
+            ))}
+        </Slider>
+      </div>
 
-        {/* Second Slider Section */}
-        <div className="mx-auto mt-12">
-          <Slider ref={sliderRef2} {...settings}>
-            {Array(8)
-              .fill(0)
-              .map((_, index) => (
-                <div className="px-8" key={index}>
-                  <Card />
-                </div>
-              ))}
-          </Slider>
-        </div>
+      {/* Second Slider Section */}
+      <div className="mx-auto mt-6">
+        <Slider ref={sliderRef2} {...settings}>
+          {Array(8)
+            .fill(0)
+            .map((_, index) => (
+              <div className="px-8 2xl:px-20" key={index}>
+                <Card />
+              </div>
+            ))}
+        </Slider>
       </div>
     </div>
   );
 }
 
 export default Main;
-
 
 
 
