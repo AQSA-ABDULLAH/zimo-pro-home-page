@@ -4,13 +4,13 @@ function BottomSection() {
   return (
     <div>
       {/* Content Section */}
-      <div className="absolute bottom-6 px-6 w-full flex items-center justify-between">
+      <div className="absolute bottom-6 px-10 w-full flex items-end justify-between">
         <div className="flex-shrink-0">
-          <img src="/assets/g12.png" alt="logo" className="h-12" />
+          <img src="/assets/g12.png" alt="logo" className="md:max-2xl:h-16" />
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <div className="text-[20px]">£5,000,000 GBP</div>
-          <div className="text-center flex gap-4 2xl:text-[20px]">
+        <div className="flex flex-col items-center gap-3 2xl:text-[22px]">
+          <div>£5,000,000 GBP</div>
+          <div className="text-center flex gap-8">
             <p>SHELTON STREET</p>
             <p>CONVENT GARDEN</p>
             <p>LONDON</p>
@@ -20,10 +20,10 @@ function BottomSection() {
         </div>
         <div>
           <div>
-            <img src="/assets/Ces-Logo.png" alt="" />
+            <img src="/assets/Ces-Logo.png" alt="" className="md:max-2xl:h-8 2xl:h-11" />
           </div>
-          <div className="flex gap-4 text-[20px] mt-3">
-            <p className="text-lg">£25.00 GBP</p>
+          <div className="flex gap-6 items-end 2xl:text-[22px] mt-14">
+            <p>£25.00 GBP</p>
             <p className="cursor-pointer">BUY ENTRY NOW</p>
           </div>
         </div>
