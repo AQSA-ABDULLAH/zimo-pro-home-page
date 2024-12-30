@@ -44,11 +44,10 @@ export default function Header() {
       </header>
 
       {/* Sidebar */}
-      {isSidebarOpen && (
-        <Sidebar toggleSidebar={toggleSidebar} />
-      )}
+      <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 }
+
 
 

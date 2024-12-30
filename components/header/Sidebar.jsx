@@ -1,12 +1,19 @@
 import React from "react";
 
-function Sidebar({ toggleSidebar }) {
+function Sidebar({ toggleSidebar, isSidebarOpen }) {
   return (
-    <div className="fixed top-0 left-0 w-[300px] h-full bg-black text-white z-10 opacity-85 overflow-y-auto scrollbar-hidden">
+    <div
+      className={`fixed top-0 left-0 w-[300px] h-full bg-black text-white z-10 opacity-85 overflow-y-auto scrollbar-hidden transition-transform duration-300 ease-in-out ${
+        isSidebarOpen ? "transform translate-x-0" : "transform -translate-x-full"
+      }`}
+    >
       <div className="flex m-6 px-2 gap-6 items-center">
         <img src="/assets/Group 3058.png" alt="logo" onClick={toggleSidebar} />
         <h3 className="text-[22px]">WELCOME</h3>
       </div>
+
+      <img src="/assets/Line 93.png" alt="line" className="px-6" />
+      
       <div className="p-8">
         <ul className="space-y-9 text-[22px] uppercase">
           <li>Real Estate</li>
@@ -43,3 +50,5 @@ function Sidebar({ toggleSidebar }) {
 }
 
 export default Sidebar;
+
+
