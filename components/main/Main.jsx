@@ -5,9 +5,13 @@ function Main() {
   return (
     <div className="min-h-screen">
       {/* Header Section */}
-      <div className="text-center py-10">
-        <h1 className="text-2xl font-bold">Featured</h1>
-        <p className="text-gray-600">View All Homes</p>
+      <div className="flex justify-between items-center py-10 px-6">
+        <h1 className="text-2xl uppercase">Featured</h1>
+        <p className="uppercase text-[30px]">View All Homes</p>
+        <div className="flex gap-3">
+          <img src="/assets/Group 3100.png" alt="" />
+          <img src="/assets/Group 3094.png" alt="" />
+        </div>
       </div>
 
       {/* Cards Grid */}
