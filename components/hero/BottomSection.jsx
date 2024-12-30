@@ -6,7 +6,7 @@ function BottomSection() {
       {/* Content Section */}
       <div className="absolute bottom-6 px-6 w-full flex items-center justify-between">
         <div className="flex-shrink-0">
-          <img src="/assets/g12.png" alt="logo" className="h-12" />
+          <img src="/assets/g12.png" alt="logo" />
         </div>
         <div className="flex flex-col items-center gap-2">
           <div className="text-[20px]">£5,000,000 GBP</div>
@@ -18,9 +18,14 @@ function BottomSection() {
             <p>UNITED KINGDOM</p>
           </div>
         </div>
-        <div className="flex gap-4 text-[20px]">
-          <p className="text-lg">£25.00 GBP</p>
-          <p className="cursor-pointer">BUY ENTRY NOW</p>
+        <div>
+          <div>
+            <img src="/assets/Ces-Logo.png" alt="" />
+          </div>
+          <div className="flex gap-4 text-[20px] mt-3">
+            <p className="text-lg">£25.00 GBP</p>
+            <p className="cursor-pointer">BUY ENTRY NOW</p>
+          </div>
         </div>
       </div>
     </div>
