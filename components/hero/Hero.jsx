@@ -35,11 +35,11 @@ export default function Hero() {
       </div>
 
       {/* Header Component */}
-      <div className="relative z-10">
+      <div className="relative">
         <Header />
       </div>
 
-      <div className="relative z-10 mt-4">
+      <div className="relative mt-4">
         <Navbar />
       </div>
 
