@@ -13,10 +13,10 @@ function BottomSection() {
           />
         </div>
         <div className="flex flex-col items-center gap-2 md:gap-3 tracking-wider">
-          <div className="tracking-widest text-[12px] md:text-[16px] desktop:text-[24px]">
+          <div className="tracking-widest text-[12px] md:text-[16px] desktop:text-[22px]">
             £5,000,000 GBP
           </div>
-          <div className="text-center text-[8px] md:text-[14px] desktop:text-[22px] flex gap-2 md:gap-5 2xl:gap-8">
+          <div className="text-center text-[8px] md:text-[14px] desktop:text-[20px] flex gap-2 md:gap-5 2xl:gap-8">
             <p>SHELTON STREET</p>
             <p>CONVENT GARDEN</p>
             <p>LONDON</p>
@@ -28,9 +28,9 @@ function BottomSection() {
           <img
             src="/assets/Ces-Logo.png"
             alt=""
-            className="h-6 md:h-8 desktop:h-12"
+            className="h-6 md:h-8 desktop:h-11"
           />
-          <div className="flex gap-4 md:gap-6 items-end text-[11px] md:text-[14px] desktop:text-[22px] mt-3 md:mt-10 2xl:mt-14 tracking-wider">
+          <div className="flex gap-4 md:gap-6 items-end text-[11px] md:text-[14px] desktop:text-[20px] mt-3 md:mt-10 2xl:mt-14 tracking-wider">
             <p>£25.00 GBP</p>
             <p className="cursor-pointer">BUY ENTRY NOW</p>
           </div>

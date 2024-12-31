@@ -31,7 +31,7 @@ export default function Header() {
           {/* Third Div */}
           <div className="flex flex-col md:flex-row items-center gap-6 justify-end flex-1">
             <div className="flex gap-6 2xl:gap-8">
-              <p className="text-[14px] md:text-[16px] 2xl:text-[20px] tracking-wider">JUST FOR YOU</p>
+              <p className="text-[14px] md:text-[16px] desktop:text-[20px] tracking-wider">JUST FOR YOU</p>
               <img src="/assets/Group 3035.png" alt="UK Flag" className="max-2xl:h-5"/>
             </div>
             <div className="flex gap-8 2xl:gap-12 max-2xl:h-5">

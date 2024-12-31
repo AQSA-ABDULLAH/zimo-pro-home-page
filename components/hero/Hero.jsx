@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <div
-      className="relative bg-cover bg-center h-[1200px] text-white"
+      className="relative bg-cover bg-center h-[100vh] text-white"
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
       {/* Overlay Image */}

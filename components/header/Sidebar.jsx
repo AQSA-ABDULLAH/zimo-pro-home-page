@@ -3,7 +3,7 @@ import React from "react";
 function Sidebar({ toggleSidebar, isSidebarOpen }) {
   return (
     <div
-      className={`fixed top-0 left-0 w-[300px] h-full bg-black text-white z-10 opacity-85 overflow-y-auto scrollbar-hidden transition-transform duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-[400px] h-full bg-black text-white z-10 opacity-85 overflow-y-auto scrollbar-hidden transition-transform duration-300 ease-in-out ${
         isSidebarOpen ? "transform translate-x-0" : "transform -translate-x-full"
       }`}
     >
