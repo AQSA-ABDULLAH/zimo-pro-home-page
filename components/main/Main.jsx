@@ -49,7 +49,7 @@ function Main() {
   return (
     <div>
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-10 px-8 2xl:px-20">
+      <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-10 px-8 desktop:px-20">
         <h1 className="text-[24px] 2xl:text-[30px] uppercase">Featured</h1>
         <p className="uppercase text-[24px] md:text-[24px] 2xl:text-[30px]">View All Homes</p>
         <div className="flex gap-3">
@@ -75,7 +75,7 @@ function Main() {
           {Array(8)
             .fill(0)
             .map((_, index) => (
-              <div className="px-8 2xl:px-20" key={index}>
+              <div className="px-8 desktop:px-20" key={index}>
                 <Card />
               </div>
             ))}
@@ -88,7 +88,7 @@ function Main() {
           {Array(8)
             .fill(0)
             .map((_, index) => (
-              <div className="px-8 2xl:px-20" key={index}>
+              <div className="px-8 desktop:px-20" key={index}>
                 <Card />
               </div>
             ))}

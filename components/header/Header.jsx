@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex justify-between items-center text-white px-10 2xl:px-16 pt-14">
+      <header className="flex justify-between items-center text-white px-10 desktop:px-16 pt-14">
         <div className="flex flex-col max-md:space-y-8 items-center lg:flex-row w-full">
           {/* First Div */}
           <div className="flex items-center gap-6 flex-1"> 

@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-      <footer className="bg-white text-black uppercase  px-8 2xl:px-20 tracking-wider">
-        <div className="text-[14px] 2xl:text-[18px] mx-auto pb-8 flex flex-col gap-16 md:flex-row flex-wrap justify-between">
+      <footer className="bg-white text-black uppercase  px-8 desktop:px-20 tracking-wider">
+        <div className="text-[14px] desktop:text-[18px] mx-auto pb-8 flex flex-col gap-16 md:flex-row flex-wrap justify-between">
           {/* Zimopro Section */}
           <div>
             <h3 className="mb-10 font-semibold">ZIMOPRO.COM</h3>
@@ -66,9 +66,9 @@ export default function Footer() {
         </div>
   
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 sm:text-center text-[12px] 2xl:text-[13px] text-black">
+        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 sm:text-center text-[12px] desktop:text-[13px] text-black">
           <div className="flex flex-col md:flex-row gap-2">
-            <img src="/assets/Group 2877.png" alt="logo" className="max-md:w-14 h-4 2xl:h-5" />
+            <img src="/assets/Group 2877.png" alt="logo" className="max-md:w-14 h-4 desktop:h-5" />
             COPYRIGHT &copy; 2022 Zimo Group. All Rights Reserved.
           </div>
           <div className="flex flex-col md:flex-row md:space-x-4" >
@@ -76,7 +76,7 @@ export default function Footer() {
             <a href="#">Privacy Policy</a>
             <a href="#">Cookies</a>
           </div>
-          <div className="w-[14rem] 2xl:w-[16rem]">
+          <div className="w-[14rem] desktop:w-[16rem]">
             <img src="/assets/Group 2666.png" />
           </div>
         </div>

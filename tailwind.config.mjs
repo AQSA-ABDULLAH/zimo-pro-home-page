@@ -15,7 +15,10 @@ export default {
         lato: ["Lato", "sans-serif"],
       },
       colors: {
-        gold: "#BE9F56", // Custom color name (e.g., gold)
+        gold: "#BE9F56",
+      },
+      screens: {
+        'desktop': '1700px',
       },
     },
   },

@@ -45,11 +45,11 @@ export default function Hero() {
 
       {/* Slide Indicators */}
       <div className="w-full">
-        <div className="absolute bottom-60 md:bottom-16 2xl:bottom-20 left-1/2 transform -translate-x-1/2 md:translate-x-0 md:right-8 2xl:right-20 flex space-x-4 z-10">
+        <div className="absolute bottom-60 md:bottom-16 desktop:bottom-20 max-md:left-1/2 transform -translate-x-1/2 md:translate-x-0 md:right-8 desktop:right-20 flex space-x-4 z-10">
           {images.map((_, index) => (
             <div
               key={index}
-              className={`h-[2px] w-4 md:w-8 2xl:w-[4rem] cursor-pointer ${
+              className={`h-[2px] w-4 md:w-8 desktop:w-[4rem] cursor-pointer ${
                 currentImageIndex === index ? "bg-gold" : "bg-white"
               }`}
               onClick={() => handleIndicatorClick(index)}
