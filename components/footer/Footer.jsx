@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
       <footer className="bg-white text-black uppercase  px-8 2xl:px-20 tracking-wider">
-        <div className="mx-auto pb-8 flex flex-col gap-22 md:flex-row flex-wrap justify-between">
+        <div className="text-[14px] 2xl:text-[18px] mx-auto pb-8 flex flex-col gap-22 md:flex-row flex-wrap justify-between">
           {/* Zimopro Section */}
           <div>
-            <h3 className="text-[18px] mb-10 font-semibold">ZIMOPRO.COM</h3>
+            <h3 className="mb-10 font-semibold">ZIMOPRO.COM</h3>
             <ul className="space-y-5">
               <li>About</li>
               <li>Contact</li>
@@ -12,14 +12,14 @@ export default function Footer() {
             </ul>
             
               <div className=" flex flex-col mt-14 gap-14">
-                <img src="/assets/Group 3331.png" alt="Zima Logo" className="w-44" />
-                <img src="/assets/Group 3075.png" alt="Civica CES Logo" className="w-44" />
+                <img src="/assets/Group 3331.png" alt="Zima Logo" className="w-40 2xl:w-44" />
+                <img src="/assets/Group 3075.png" alt="Civica CES Logo" className="w-40 2xl:w-44" />
               </div>
           </div>
   
           {/* Categories */}
           <div>
-            <h3 className="text-[18px] mb-10 font-semibold">CATEGORIES</h3>
+            <h3 className="mb-10 font-semibold">CATEGORIES</h3>
             <ul className="space-y-5">
               <li>Real Estate</li>
               <li>Private Islands</li>
@@ -34,7 +34,7 @@ export default function Footer() {
   
           {/* Business / Agents */}
           <div>
-            <h3 className="text-[18px] mb-10 font-semibold">BUSINESS / AGENTS</h3>
+            <h3 className=" mb-10 font-semibold">BUSINESS / AGENTS</h3>
             <ul className="space-y-5">
               <li>List with us</li>
               <li>Partner</li>
@@ -45,7 +45,7 @@ export default function Footer() {
   
           {/* Sell Your Home */}
           <div>
-            <h3 className="text-[18px] mb-10 font-semibold">SELL YOUR HOME</h3>
+            <h3 className=" mb-10 font-semibold">SELL YOUR HOME</h3>
             <ul className="space-y-5">
               <li>Find a Zimo Agent</li>
               <li>Gift Card</li>
@@ -55,20 +55,20 @@ export default function Footer() {
   
           {/* Supported Charities */}
           <div>
-            <h3 className="text-[18px] mb-8  font-semibold">SUPPORTED CHARITIES</h3>
+            <h3 className="mb-8  font-semibold">SUPPORTED CHARITIES</h3>
             <div className="space-y-8">
-              <img src="/assets/Group 3126.png" alt="Unicef"/>
-              <img src="/assets/Group 3132.png" alt="World Vision"/>
-              <img src="/assets/Group 3133.png" alt="Save the Children"/>
-              <img src="/assets/Group 3137.png" alt="Great Ormond Street Hospital"/>
+              <img src="/assets/Group 3126.png" alt="Unicef" className="max-2xl:h-9"/>
+              <img src="/assets/Group 3132.png" alt="World Vision" className="max-2xl:h-8"/>
+              <img src="/assets/Group 3133.png" alt="Save the Children" className="max-2xl:h-8"/>
+              <img src="/assets/Group 3137.png" alt="Great Ormond Street Hospital" className="max-2xl:h-16"/>
             </div>
           </div>
         </div>
   
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 sm:text-center text-[13px] text-black">
+        <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 sm:text-center text-[12px] 2xl:text-[13px] text-black">
           <div className="flex gap-2">
-            <img src="/assets/Group 2877.png" alt="logo" className="md:h-5" />
+            <img src="/assets/Group 2877.png" alt="logo" className="h-3 2xl:h-5" />
             COPYRIGHT &copy; 2022 Zimo Group. All Rights Reserved.
           </div>
           <div className="space-x-4" >
@@ -76,7 +76,7 @@ export default function Footer() {
             <a href="#">Privacy Policy</a>
             <a href="#">Cookies</a>
           </div>
-          <div className="w-[16rem]">
+          <div className="w-[14rem] 2xl:w-[16rem]">
             <img src="/assets/Group 2666.png" />
           </div>
         </div>
