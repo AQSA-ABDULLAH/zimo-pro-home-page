@@ -39,21 +39,23 @@ export default function Hero() {
         <Header />
       </div>
 
-      <div className="relative mt-4">
+      <div className="hidden md:block relative mt-4">
         <Navbar />
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-16 2xl:bottom-20 right-8 2xl:right-20 transform flex space-x-4 z-10">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            className={`h-[2px] w-8 2xl:w-[4rem] cursor-pointer ${
-              currentImageIndex === index ? "bg-gold" : "bg-white"
-            }`}
-            onClick={() => handleIndicatorClick(index)}
-          />
-        ))}
+      <div className="w-full">
+        <div className="absolute bottom-60 md:bottom-16 2xl:bottom-20 left-1/2 transform -translate-x-1/2 md:translate-x-0 md:right-8 2xl:right-20 flex space-x-4 z-10">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              className={`h-[2px] w-4 md:w-8 2xl:w-[4rem] cursor-pointer ${
+                currentImageIndex === index ? "bg-gold" : "bg-white"
+              }`}
+              onClick={() => handleIndicatorClick(index)}
+            />
+          ))}
+        </div>
       </div>
 
       <div className="z-10 w-full">

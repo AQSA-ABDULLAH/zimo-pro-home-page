@@ -49,21 +49,21 @@ function Main() {
   return (
     <div>
       {/* Header Section */}
-      <div className="flex justify-between items-center py-10 px-8 2xl:px-20">
+      <div className="flex flex-col md:flex-row gap-5 justify-between items-center py-10 px-8 2xl:px-20">
         <h1 className="text-[24px] 2xl:text-[30px] uppercase">Featured</h1>
-        <p className="uppercase text-[24px] 2xl:text-[30px]">View All Homes</p>
+        <p className="uppercase text-[24px] md:text-[24px] 2xl:text-[30px]">View All Homes</p>
         <div className="flex gap-3">
           {/* Custom Arrows */}
           <img
             src="/assets/Group 3100.png"
             alt="Previous"
-            className="cursor-pointer md:max-2xl:h-14"
+            className="cursor-pointer max-md:h-10 max-2xl:h-14"
             onClick={handlePrev} // Trigger previous slide
           />
           <img
             src="/assets/Group 3094.png"
             alt="Next"
-            className="cursor-pointer md:max-2xl:h-14"
+            className="cursor-pointer max-md:h-10 max-2xl:h-14"
             onClick={handleNext} // Trigger next slide
           />
         </div>
