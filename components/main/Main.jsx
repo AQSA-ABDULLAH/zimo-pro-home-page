@@ -14,11 +14,18 @@ function Main() {
 
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
     arrows: false, // Disable default arrows
     responsive: [
+      {
+        breakpoint: 1928,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
