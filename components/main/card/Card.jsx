@@ -126,12 +126,12 @@ const Card = ({ index }) => {
             </p>
           </div>
 
-          <div className="w-16">
+          <div className="w-16 flex justify-end">
             {index % 2 === 0 ? (
               <img
                 src="/assets/Group 3245.png"
                 alt="logo"
-                className="px-1 w-7"
+                className="w-7"
               />
             ) : (
               <img
