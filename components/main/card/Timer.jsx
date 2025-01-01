@@ -43,19 +43,19 @@ function Timer() {
       style={{ fontWeight: 100 }}>
         <div className="flex flex-col items-center">
           <p>{timeLeft.days}</p>
-          <p className="text-[7px] desktop:text-[9px] uppercase tracking-widest">Days</p>
+          <p className="text-[7px] desktop:text-[13px] uppercase tracking-widest">Days</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.hours}</span>
-          <p className="text-[7px] desktop:text-[9px] uppercase tracking-widest">Hours</p>
+          <p className="text-[7px] desktop:text-[13px] uppercase tracking-widest">Hours</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.minutes}</span>
-          <p className="text-[7px] desktop:text-[10px] font-normal uppercase tracking-widest">Minutes</p>
+          <p className="text-[7px] desktop:text-[13px] font-normal uppercase tracking-widest">Minutes</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.seconds}</span>
-          <p className="text-[7px] desktop:text-[10px] font-normal uppercase tracking-widest">Seconds</p>
+          <p className="text-[7px] desktop:text-[13px] font-normal uppercase tracking-widest">Seconds</p>
         </div>
       </div>
     </div>

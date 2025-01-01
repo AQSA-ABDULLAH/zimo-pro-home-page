@@ -1,7 +1,7 @@
 import React from "react";
 
 function SquareProgressBar({ percentage }) {
-  const size = 30; // Size of the square
+  const size = 34; // Size of the square
   const stroke = 2; // Stroke width
   const innerSize = size - stroke; // Inner size considering the stroke
   const progress = (25.5 / 100) * 11 * innerSize; // Total length of the progress bar
@@ -20,7 +20,8 @@ function SquareProgressBar({ percentage }) {
           width={innerSize}
           height={innerSize}
           fill="none"
-          stroke="#e5e7eb" // Gray background
+          stroke="#e5e7eb"
+          opacity={0.5} // Gray background
           strokeWidth={stroke}
           rx="20" // Rounded corners
           ry="20"
