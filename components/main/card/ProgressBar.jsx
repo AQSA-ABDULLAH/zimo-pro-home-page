@@ -1,10 +1,10 @@
 import React from "react";
 
 function SquareProgressBar({ percentage }) {
-  const size = 42; // Size of the square
-  const stroke = 5; // Stroke width
+  const size = 22; // Size of the square
+  const stroke = 1; // Stroke width
   const innerSize = size - stroke; // Inner size considering the stroke
-  const progress = (24 / 100) * 11 * innerSize; // Total length of the progress bar
+  const progress = (28 / 100) * 11 * innerSize; // Total length of the progress bar
 
   return (
     <div className="flex justify-center items-center">
@@ -22,8 +22,8 @@ function SquareProgressBar({ percentage }) {
           fill="none"
           stroke="#e5e7eb" // Gray background
           strokeWidth={stroke}
-          rx="10" // Rounded corners
-          ry="10"
+          rx="20" // Rounded corners
+          ry="20"
         />
 
         {/* Foreground progress rectangle */}
@@ -37,8 +37,8 @@ function SquareProgressBar({ percentage }) {
           strokeWidth={stroke}
           strokeDasharray={`${progress} ${4 * innerSize}`} // Total perimeter
           strokeDashoffset={4 * innerSize - progress} // Offset for progress
-          rx="10" // Rounded corners
-          ry="10"
+          rx="20" // Rounded corners
+          ry="20"
           style={{ transition: "stroke-dashoffset 0.5s ease" }}
         />
       </svg>
@@ -47,7 +47,7 @@ function SquareProgressBar({ percentage }) {
       <div
         className="absolute flex justify-center items-center md:right-355"
       >
-        <span className="text-[9px] font-semibold">{percentage}%</span>
+        <span className="text-[5px]">{percentage}%</span>
       </div>
     </div>
   );

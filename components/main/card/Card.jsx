@@ -2,9 +2,9 @@
 
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
-import SquareProgressBar from "./ProgressBar";
 import { FaRegHeart } from "react-icons/fa";
 import { IoMdHeart } from "react-icons/io";
+import SquareProgressBar from "./ProgressBar";
 
 const Timer = dynamic(() => import("./Timer"), { ssr: false });
 
@@ -18,7 +18,7 @@ const images = [
   "/assets/b5 .png",
 ];
 
-const Card = () => {
+const Card = ({ index }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
 
@@ -33,7 +33,7 @@ const Card = () => {
   };
 
   return (
-    <div className="text-white bg-white w-full max-w-[430px] desktop:max-w-[480px] ">
+    <div className="text-white bg-white w-full max-w-[430px] desktop:max-w-[480px]">
       <div className="relative rounded-xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
@@ -45,7 +45,6 @@ const Card = () => {
               "inset 0px 90px 80px -38px rgba(0, 0, 0, 0.8), inset 0px -90px 60px -35px rgba(0, 0, 0, 0.9)",
           }}
         >
-          {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         </div>
 
@@ -86,7 +85,6 @@ const Card = () => {
 
         {/* Circular Progress Bar and Price */}
         <div className="absolute bottom-14 desktop:bottom-[4.5rem] flex justify-center w-[100%] px-6">
-          {/* Slide Indicators */}
           <div className="flex justify-center mt-4">
             {images.map((_, index) => (
               <span
@@ -114,9 +112,9 @@ const Card = () => {
         <div className="absolute w-[100%] bottom-2 flex justify-between px-6">
           <div>
             <img
-              src="/assets/Group 3005.png"
+              src="/assets/g12.png"
               alt="logo"
-              className="px-1 w-16 2xl:w-20"
+              className="px-1 w-16 dektop:w-20"
             />
           </div>
           <div className="flex flex-col items-center">
@@ -127,14 +125,28 @@ const Card = () => {
               #ZM7861234567
             </p>
           </div>
+
           <div>
-            <img
-              src="/assets/g12.png"
-              alt="logo"
-              className="px-1 w-16 dektop:w-20"
-            />
+            {index % 2 === 0 ? (
+              <img
+                src="/assets/Group 3245.png"
+                alt="logo"
+                className="px-1 w-7"
+              />
+            ) : (
+              <img
+                src="/assets/g12.png"
+                alt="logo"
+                className="px-1 w-16 dektop:w-20"
+              />
+            )}
           </div>
+          
         </div>
+        <div className="absolute bottom-2 right-28 opacity-60" >
+          <SquareProgressBar percentage={50} />
+        </div>
+        
       </div>
 
       {/* Buy Entry Section */}
@@ -143,7 +155,9 @@ const Card = () => {
           <p>£25.00 GBP</p>
           <button>BUY ENTRY NOW</button>
         </div>
-        <p className="text-end text-[5px] desktop:text-[7px] px-5">#ZM7861234567</p>
+        <p className="text-end text-[5px] desktop:text-[7px] px-5">
+          #ZM7861234567
+        </p>
       </div>
     </div>
   );

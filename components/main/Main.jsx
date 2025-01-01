@@ -57,8 +57,12 @@ function Main() {
     <div>
       {/* Header Section */}
       <div className="flex gap-5 justify-between items-center py-10 px-8 desktop:px-20">
-        <h1 className="text-[12px] md:text-[24px] 2xl:text-[30px] font-semibold uppercase">Featured</h1>
-        <p className="uppercase text-[12px] md:text-[24px] font-semibold 2xl:text-[30px]">View All Homes</p>
+        <h1 className="text-[12px] md:text-[24px] 2xl:text-[30px] font-semibold uppercase">
+          Featured
+        </h1>
+        <p className="uppercase text-[12px] md:text-[24px] font-semibold 2xl:text-[30px]">
+          View All Homes
+        </p>
         <div className="flex gap-3">
           {/* Custom Arrows */}
           <img
@@ -83,7 +87,7 @@ function Main() {
             .fill(0)
             .map((_, index) => (
               <div className="px-8 desktop:px-20" key={index}>
-                <Card />
+                <Card index={index + 1} />
               </div>
             ))}
         </Slider>
@@ -96,7 +100,7 @@ function Main() {
             .fill(0)
             .map((_, index) => (
               <div className="px-8 desktop:px-20" key={index}>
-                <Card />
+                <Card index={index + 1} />
               </div>
             ))}
         </Slider>
@@ -106,7 +110,3 @@ function Main() {
 }
 
 export default Main;
-
-
-
-

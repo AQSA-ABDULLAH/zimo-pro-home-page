@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Hero />
       <Main />
       <img src="/assets/Line 93.png" alt="line" className="mt-12 md:mb-10 px-8 md:px-[30em] md:opacity-50 w-screen" />
