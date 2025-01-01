@@ -100,19 +100,21 @@ const Card = ({ index }) => {
 
         {/* Address and Details Section */}
         <div className="absolute w-[100%] bottom-9 desktop:bottom-12 tracking-wider">
-          <div className="flex justify-between font-lato text-[6px] desktop:text-[8px] uppercase  px-6">
-            <p>Shelton Street</p>
-            <p>Covent Garden</p>
-            <p>London</p>
-            <p>WC2H</p>
-            <p>United Kingdom</p>
-          </div>
-        </div>
+  <div className="address-container flex flex-wrap desktop:flex-nowrap justify-between font-lato text-[6px] desktop:text-[8px] uppercase px-6">
+    <p>Shelton Street</p>
+    <p>Covent Garden</p>
+    <p>London</p>
+    <p>WC2H</p>
+    <p className="w-full text-center desktop:w-auto">United Kingdom</p>
+  </div>
+</div>
+
+
 
         <div className="absolute w-[100%] bottom-2 flex justify-between px-6">
           <div>
             <img
-              src="/assets/g12.png"
+              src="/assets/Group 3005.png"
               alt="logo"
               className="px-1 w-16 dektop:w-20"
             />
