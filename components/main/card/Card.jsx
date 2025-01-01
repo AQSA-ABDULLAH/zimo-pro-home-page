@@ -84,14 +84,14 @@ const Card = ({ index }) => {
         </div>
 
         {/* Circular Progress Bar and Price */}
-        <div className="absolute bottom-14 desktop:bottom-[4.5rem] flex justify-center w-[100%] px-6">
+        <div className="absolute bottom-24 desktop:bottom-[5.6rem] flex justify-center w-[100%] px-6">
           <div className="flex justify-center mt-4">
             {images.map((_, index) => (
               <span
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`cursor-pointer mx-1 h-0.5 w-4 2xl:w-8 ${
-                  index === currentImageIndex ? "bg-gold" : "bg-gray-400"
+                className={`cursor-pointer mx-1 h-1 w-3 ${
+                  index === currentImageIndex ? "bg-gold" : "bg-white"
                 }`}
               ></span>
             ))}
@@ -99,19 +99,17 @@ const Card = ({ index }) => {
         </div>
 
         {/* Address and Details Section */}
-        <div className="absolute w-[100%] bottom-9 desktop:bottom-12 tracking-wider">
-  <div className="address-container flex flex-wrap desktop:flex-nowrap justify-between font-lato text-[6px] desktop:text-[8px] uppercase px-6">
-    <p>Shelton Street</p>
-    <p>Covent Garden</p>
-    <p>London</p>
-    <p>WC2H</p>
-    <p className="w-full text-center desktop:w-auto">United Kingdom</p>
-  </div>
-</div>
+        <div className="absolute w-[100%] bottom-12 desktop:bottom-11 tracking-wider">
+          <div className="flex flex-wrap gap-x-8 justify-center font-lato text-[12px] px-4 desktop:text-[13px] uppercase">
+            <p>Shelton Street</p>
+            <p>Covent Garden</p>
+            <p>London</p>
+            <p>WC2H</p>
+            <p>United Kingdom</p>
+          </div>
+        </div>
 
-
-
-        <div className="absolute w-[100%] bottom-2 flex justify-between px-6">
+        <div className="absolute w-[100%] bottom-2 flex items-center justify-between px-6">
           <div>
             <img
               src="/assets/Group 3005.png"
@@ -120,15 +118,15 @@ const Card = ({ index }) => {
             />
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-end text-[8px] dektop:text-[14px] tracking-widest">
+            <p className="text-end text-[12px] desktop:text-[14px] tracking-widest">
               £5,000,000 GBP
             </p>
-            <p className="text-end text-[5px] desktop:text-[8px] tracking-widest">
+            <p className="text-end text-[10px] desktop:text-[9px] tracking-widest">
               #ZM7861234567
             </p>
           </div>
 
-          <div>
+          <div className="w-16">
             {index % 2 === 0 ? (
               <img
                 src="/assets/Group 3245.png"
@@ -143,12 +141,10 @@ const Card = ({ index }) => {
               />
             )}
           </div>
-          
         </div>
-        <div className="absolute bottom-2 right-28 opacity-60" >
+        <div className="absolute bottom-2 desktop:bottom-4 max-2xl:right-24 desktop:right-28 opacity-60">
           <SquareProgressBar percentage={50} />
         </div>
-        
       </div>
 
       {/* Buy Entry Section */}
