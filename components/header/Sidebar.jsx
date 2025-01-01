@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 function Sidebar({ toggleSidebar, isSidebarOpen }) {
+  const sidebarRef = useRef(null); // To reference the sidebar element
+
+  useEffect(() => {
+    // Function to handle clicks outside the sidebar
+    const handleOutsideClick = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        toggleSidebar(); // Close the sidebar
+      }
+    };
+
+    if (isSidebarOpen) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    }
+
+    // Cleanup listener on component unmount or when sidebar closes
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [isSidebarOpen, toggleSidebar]);
+
   return (
     <div
+      ref={sidebarRef} // Attach the ref to the sidebar div
       className={`fixed top-0 left-0 w-[400px] h-full bg-black text-white z-10 opacity-85 overflow-y-auto scrollbar-hidden transition-transform duration-300 ease-in-out ${
         isSidebarOpen ? "transform translate-x-0" : "transform -translate-x-full"
       }`}
@@ -50,5 +71,3 @@ function Sidebar({ toggleSidebar, isSidebarOpen }) {
 }
 
 export default Sidebar;
-
-

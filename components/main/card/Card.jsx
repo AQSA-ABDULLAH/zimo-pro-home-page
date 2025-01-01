@@ -33,11 +33,11 @@ const Card = () => {
   };
 
   return (
-    <div className="text-white bg-white w-full max-w-[454px] 2xl:max-w-[480px] ">
+    <div className="text-white bg-white w-full max-w-[430px] desktop:max-w-[480px] ">
       <div className="relative rounded-xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
-          className="h-[380px] 2xl:h-[547px] bg-cover bg-center relative"
+          className="h-[380px] 2xl:h-[490px] desktop:h-[547px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundColor: "#ccc",
@@ -65,7 +65,7 @@ const Card = () => {
         <Timer />
 
         {/* Share And Like */}
-        <div className="absolute top-24 2xl:top-28 right-7 flex items-center space-x-4">
+        <div className="absolute top-24 desktop:top-28 right-7 flex items-center space-x-4">
           <img
             src="/assets/Path 7830.png"
             alt="share-icon"
@@ -85,7 +85,7 @@ const Card = () => {
         </div>
 
         {/* Circular Progress Bar and Price */}
-        <div className="absolute bottom-14 flex justify-center w-[100%] px-6">
+        <div className="absolute bottom-14 desktop:bottom-[4.5rem] flex justify-center w-[100%] px-6">
           {/* Slide Indicators */}
           <div className="flex justify-center mt-4">
             {images.map((_, index) => (
@@ -101,8 +101,8 @@ const Card = () => {
         </div>
 
         {/* Address and Details Section */}
-        <div className="absolute w-[100%] bottom-9 2xl:bottom-14 tracking-wider">
-          <div className="flex justify-between font-lato text-[6px] 2xl:text-[9px] uppercase  px-6">
+        <div className="absolute w-[100%] bottom-9 desktop:bottom-12 tracking-wider">
+          <div className="flex justify-between font-lato text-[6px] desktop:text-[8px] uppercase  px-6">
             <p>Shelton Street</p>
             <p>Covent Garden</p>
             <p>London</p>
@@ -120,10 +120,10 @@ const Card = () => {
             />
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-end text-[8px] 2xl:text-[14px] tracking-widest">
+            <p className="text-end text-[8px] dektop:text-[14px] tracking-widest">
               £5,000,000 GBP
             </p>
-            <p className="text-end text-[5px] 2xl:text-[8px] tracking-widest">
+            <p className="text-end text-[5px] desktop:text-[8px] tracking-widest">
               #ZM7861234567
             </p>
           </div>
@@ -131,19 +131,19 @@ const Card = () => {
             <img
               src="/assets/g12.png"
               alt="logo"
-              className="px-1 w-16 2xl:w-20"
+              className="px-1 w-16 dektop:w-20"
             />
           </div>
         </div>
       </div>
 
       {/* Buy Entry Section */}
-      <div className="h-[44px] 2xl:h-[54px] bg-black tracking-widest rounded-xl mt-2 font-lato text-[12px] 2xl:text-[16px]">
+      <div className="h-[44px] desktop:h-[54px] bg-black tracking-widest rounded-xl mt-2 font-lato text-[12px] desktop:text-[16px]">
         <div className="flex justify-between pt-4 px-6">
           <p>£25.00 GBP</p>
           <button>BUY ENTRY NOW</button>
         </div>
-        <p className="text-end text-[5px] 2xl:text-[7px] px-5">#ZM7861234567</p>
+        <p className="text-end text-[5px] desktop:text-[7px] px-5">#ZM7861234567</p>
       </div>
     </div>
   );

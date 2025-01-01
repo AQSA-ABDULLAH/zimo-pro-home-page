@@ -68,7 +68,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 sm:text-center text-[12px] desktop:text-[13px] text-black">
           <div className="flex flex-col md:flex-row gap-2">
-            <img src="/assets/Group 2877.png" alt="logo" className="max-md:w-14 h-4 desktop:h-5" />
+            <img src="/assets/Group 2877.png" alt="logo" className="max-md:w-14 h-4 desktop:h-4" />
             COPYRIGHT &copy; 2022 Zimo Group. All Rights Reserved.
           </div>
           <div className="flex flex-col md:flex-row md:space-x-4" >
@@ -76,7 +76,7 @@ export default function Footer() {
             <a href="#">Privacy Policy</a>
             <a href="#">Cookies</a>
           </div>
-          <div className="w-[14rem] desktop:w-[16rem]">
+          <div className="w-[14rem] desktop:w-[28rem]">
             <img src="/assets/Group 2666.png" />
           </div>
         </div>
