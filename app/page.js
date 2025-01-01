@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Hero />
       <Main />
-      <img src="/assets/Line 93.png" alt="line" className="mt-12 mb-10 px-[30em] opacity-50 w-screen" />
+      <img src="/assets/Line 93.png" alt="line" className="mt-12 md:mb-10 px-8 md:px-[30em] md:opacity-50 w-screen" />
       <NewsletterSection />
       <Footer />
     </div>
