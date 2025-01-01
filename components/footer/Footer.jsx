@@ -107,7 +107,7 @@ export default function Footer() {
         <div className="flex-1 flex justify-end">
           <img
             src="/assets/Group 2666.png"
-            className="w-[15rem] max-desktop:h-[1.6rem] desktop:w-[28rem]"
+            className="w-[18rem] max-desktop:h-[1.6rem] desktop:w-[28rem]"
           />
         </div>
       </div>
