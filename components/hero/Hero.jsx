@@ -21,10 +21,14 @@ export default function Hero() {
   };
 
   return (
-    <div
-      className="relative bg-cover bg-center h-[100vh] text-white"
-      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
-    >
+    <div className="relative h-[100vh] text-white">
+      {" "}
+      {/* Background Image */}{" "}
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
+        style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+      ></div>
+      
       {/* Overlay Image */}
       <div className="absolute inset-0 flex justify-center items-center">
         <img
@@ -33,16 +37,13 @@ export default function Hero() {
           className="h-full w-full"
         />
       </div>
-
       {/* Header Component */}
       <div className="relative">
         <Header />
       </div>
-
       <div className="hidden md:block relative mt-4">
         <Navbar />
       </div>
-
       {/* Slide Indicators */}
       <div className="w-full">
         <div className="absolute z-10 bottom-48 md:bottom-16 desktop:bottom-20 max-md:left-1/2 transform -translate-x-1/2 md:translate-x-0 md:right-8 desktop:right-20 flex space-x-4">
@@ -57,7 +58,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-
       <div className="z-10 w-full">
         <BottomSection />
       </div>

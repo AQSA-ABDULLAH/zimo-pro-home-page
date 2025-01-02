@@ -37,7 +37,7 @@ const Card = ({ index }) => {
       <div className="relative rounded-3xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
-          className="h-[460px] desktop:h-[547px] bg-cover bg-center relative"
+          className="h-[460px] desktop:h-[547px] bg-cover bg-center relative transition-all duration-700 ease"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundColor: "#ccc",
